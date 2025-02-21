@@ -1,0 +1,195 @@
+/* Header Container */
+.amazon-header {
+  background-color: #000000;
+  color: #ffffff;
+  width: 100%;
+  padding: 8px 16px;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Logo Styles */
+.amazon-logo {
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.amazon-logo span {
+  color: #ff9900;
+}
+
+.delivery-section {
+  display: flex;
+}
+
+/* Delivery Location */
+.delivery-location {
+  display: flex;
+  align-items: center;
+  margin-left: 16px;
+  font-size: 14px;
+}
+
+.delivery-location-icon {
+  margin-right: 4px;
+}
+
+.delivery-text {
+  color: #cccccc;
+}
+
+.delivery-location-bold {
+  font-weight: bold;
+}
+
+/* Search Bar */
+.search-container {
+  flex: 1;
+  max-width: 720px;
+  margin: 0 16px;
+  display: flex;
+}
+
+.search-wrapper {
+  display: flex;
+  width: 100%;
+}
+
+.category-dropdown {
+  background-color: #f3f3f3;
+  color: #000000;
+  padding: 8px 12px;
+  border-radius: 4px 0 0 4px;
+  border-right: 1px solid #cdcdcd;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.category-dropdown:hover {
+  background-color: #e6e6e6;
+}
+
+.search-input {
+  flex: 1;
+  padding: 8px 16px;
+  border: none;
+  outline: none;
+}
+
+.search-button {
+  background-color: #ff9900;
+  padding: 0 24px;
+  border-radius: 0 4px 4px 0;
+  border: none;
+  cursor: pointer;
+}
+
+.search-button:hover {
+  background-color: #ff8c00;
+}
+
+/* Right Side Elements */
+.right-section {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+/* Language Selector */
+.language-selector {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: #ffffff;
+}
+
+.language-flag {
+  margin-right: 4px;
+}
+
+/* Account Section */
+.account-section {
+  font-size: 14px;
+}
+
+.account-text-bold {
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+/* Returns & Orders */
+.returns-section {
+  font-size: 14px;
+}
+
+.returns-text-bold {
+  font-weight: bold;
+}
+
+/* Cart */
+.cart-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.cart-icon-wrapper {
+  position: relative;
+}
+
+.cart-count {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background-color: #ff9900;
+  font-size: 12px;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cart-text {
+  margin-left: 8px;
+  font-weight: bold;
+}
+
+/* Hover States */
+.hover-dropdown:hover {
+  cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .delivery-location,
+  .returns-section {
+    display: none;
+  }
+
+  .search-container {
+    max-width: 500px;
+  }
+}
+
+@media (max-width: 768px) {
+  .category-dropdown {
+    display: none;
+  }
+
+  .right-section {
+    gap: 16px;
+  }
+}

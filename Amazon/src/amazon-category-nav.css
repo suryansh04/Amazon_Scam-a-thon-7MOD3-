@@ -1,0 +1,59 @@
+/* amazon-category-nav.css */
+.category-nav {
+  background-color: #ffffff;
+  padding: 8px 16px;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.category-container {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  max-width: 1500px;
+  margin: 0 auto;
+  overflow-x: auto;
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+}
+
+.category-container::-webkit-scrollbar {
+  display: none;
+}
+
+.category-link {
+  color: #333333;
+  text-decoration: none;
+  font-size: 14px;
+  white-space: nowrap;
+  padding: 4px 0;
+  position: relative;
+}
+
+.category-link:hover {
+  color: #ff9900;
+}
+
+.category-link:hover::after {
+  content: "";
+  position: absolute;
+  bottom: -9px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: #ff9900;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .category-nav {
+    padding: 8px;
+  }
+
+  .category-container {
+    gap: 20px;
+  }
+
+  .category-link {
+    font-size: 13px;
+  }
+}

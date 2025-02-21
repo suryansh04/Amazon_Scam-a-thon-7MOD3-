@@ -1,0 +1,89 @@
+/* amazon-filter-sidebar.css */
+.filter-sidebar {
+  width: 280px;
+  padding: 16px;
+  background: #fff;
+  border-right: 1px solid #e6e6e6;
+}
+
+.filter-section {
+  margin-bottom: 20px;
+}
+
+.filter-heading {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.filter-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.filter-item {
+  margin: 4px 0;
+  font-size: 14px;
+  color: #111;
+}
+
+.filter-link {
+  text-decoration: none;
+  color: #111;
+  display: block;
+  padding: 4px 0;
+}
+
+.filter-link:hover {
+  color: #c45500;
+}
+
+.checkbox-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.checkbox-input {
+  cursor: pointer;
+}
+
+.price-link {
+  color: #111;
+  text-decoration: none;
+  display: block;
+  padding: 4px 0;
+}
+
+.price-link:hover {
+  color: #c45500;
+  background-color: #f3f3f3;
+}
+
+.prime-icon {
+  color: #00a8e1;
+  margin-left: 4px;
+}
+
+.star-rating {
+  color: #ffa41c;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.back-link {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: #111;
+  text-decoration: none;
+  margin-bottom: 12px;
+}
+
+.back-link:hover {
+  color: #c45500;
+}
